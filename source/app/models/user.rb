@@ -24,7 +24,7 @@ class User < ActiveRecord::Base
   end
 
   def total_karma
-    @totalkarma
+    self.totalkarma
   end
 
   def full_name
