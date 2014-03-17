@@ -3,7 +3,7 @@ namespace :ttl_karma_pts do
   task :add_ttl_karma => :environment do
     User.all.each do |user|
       puts "updating #{user.id}"
-      user.update_attribute(user.karma_points.sum(:value))
+      user.update_attribute(:total_karma, user.karma_points.sum(:value))
     end
   end
 end

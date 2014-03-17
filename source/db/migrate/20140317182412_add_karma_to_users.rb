@@ -1,5 +1,5 @@
 class AddKarmaToUsers < ActiveRecord::Migration
   def change
-    add_column :users, :total_karma_pts, :integer
+    add_column :users, :total_karma, :integer
   end
 end
