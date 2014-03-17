@@ -4,7 +4,6 @@ class CreateKarmaPoints < ActiveRecord::Migration
       t.integer :user_id, :null => false
       t.integer :value,   :null => false
       t.string  :label,   :null => false
-
       t.timestamps
     end
   end
