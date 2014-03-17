@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
 gem 'thin'
-
+gem "binding_of_caller"
 gem 'bcrypt-ruby'
 
 gem 'pg'
@@ -11,6 +11,7 @@ gem 'jquery-rails'
 group :development do
   gem 'quiet_assets'
   gem 'activerecord-import'
+  gem 'better_errors'
 end
 
 group :development, :test do
@@ -29,3 +30,5 @@ group :assets do
   gem 'bootstrap-sass', '~> 2.3.1.0'
   gem 'uglifier', '>= 1.0.3'
 end
+
+

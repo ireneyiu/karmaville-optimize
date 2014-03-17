@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
             :uniqueness => {:case_sensitive => false}
 
   def self.by_karma
+    #User.all.sort_by {|user| user.total_karma }
     joins(:karma_points).group('users.id').order('SUM(karma_points.value) DESC')
   end
 
