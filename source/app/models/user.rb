@@ -32,7 +32,7 @@ class User < ActiveRecord::Base
   end
 
   def update_karma
-    self.totalkarma = self.total_karma
+    self.update_attribute(:totalkarma, self.total_karma)
   end
 
 
